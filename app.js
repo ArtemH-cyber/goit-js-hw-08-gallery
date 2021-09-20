@@ -65,6 +65,77 @@ const galleryItems = [
 ];
 
 
+// const refs = {
+//   listUl: document.querySelector(".gallery"),
+//   containerUl: document.querySelector(".js-gallery"),
+//   divModal: document.querySelector(".lightbox"),
+//   imgModal: document.querySelector(".lightbox__image"),
+//   closeModalBtn: document.querySelector('[data-action="close-lightbox"]')
+// }
+
+
+// const makeMarkop = transaction => {
+
+//   return `
+//     <li class= "gallery__item">
+//       <a
+//         class= "gallery__link"
+//         href= "${transaction.original}"
+//       >
+//         <img
+//           class= "gallery__image"
+//           src= "${transaction.preview}"
+//           data-source= "${transaction.original}"
+//           alt= "${transaction.description}"
+//         />     
+//       </a>
+//     </li>
+//    `}
+
+// const result = galleryItems.map(makeMarkop).join('')
+
+// refs.listUl.insertAdjacentHTML('beforeend', result)
+// refs.containerUl.addEventListener('click', onOpenModal)
+// refs.closeModalBtn.addEventListener('click', onCloseModal)
+
+// function onOpenModal(event) {
+
+//    // откл перезагрузку окна
+//   event.preventDefault()
+//   // фильтр целей, кроме img никого
+//   if (event.target.nodeName !== 'IMG') {
+//     return
+//   }
+ 
+
+//   // снять класс с активного
+//   // const currentActiveImg = document.querySelector('.is-open')
+
+//   // if (currentActiveImg) {
+//   //   currentActiveImg.classList.remove('.is-open')
+//   // }
+
+//   console.log(event.target.nodeName)
+//   // вешаем на див класс при клике на img
+//   refs.divModal.classList.add('is-open')
+
+//      refs.imgModal.srs = event.target.dataset.source;
+//     console.log(refs.imgModal.srs);
+  
+// } 
+
+
+// function onCloseModal(event) {
+//   refs.divModal.classList.remove('is-open')
+//   refs.imgModal.srs = "";
+// }
+
+
+
+
+
+
+
 const galleryRef = document.querySelector('.js-gallery');
 const lightboxRef = document.querySelector('div.lightbox');
 const modalImage = document.querySelector('img.lightbox__image');
